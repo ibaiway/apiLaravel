@@ -92,6 +92,15 @@
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
+                <div>
+                  <ul>
+                    @if(isset($people))
+                  @foreach($people as $person)
+                    <li>{{$person['name']}}</li>
+                    @endforeach
+                    @endif
+                  </ul>
+                </div>
             </div>
         </div>
     </body>
